@@ -1,7 +1,6 @@
 package utilidades
 
 import (
-	"fmt"
 	"github.com/kmiloparra/resource-mutant/constantes"
 	"strings"
 )
@@ -76,7 +75,6 @@ func EncontrarIncidenciasHash(secuenciasValidas, secuenciasinvalidas map[string]
 
 		resultado, noExiste := secuenciasValidas[subCadena]
 		if noExiste {
-			fmt.Println("algo", resultado)
 			numeroIncidencias++
 			if i < tamanioCadena-constantes.TAMANIO_SECUENCIA_MUTANTE && string(cadena[i+constantes.TAMANIO_SECUENCIA_MUTANTE]) == resultado {
 				return constantes.CANTIDAD_SECUENCIA_MUTANTE
@@ -88,7 +86,6 @@ func EncontrarIncidenciasHash(secuenciasValidas, secuenciasinvalidas map[string]
 				i += constantes.CANTIDAD_SECUENCIA_MUTANTE
 			}
 		}
-		fmt.Println("i",i)
 	}
 
 	return numeroIncidencias
