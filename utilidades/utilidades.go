@@ -73,6 +73,7 @@ func EncontrarIncidenciasHash(secuenciasValidas, secuenciasinvalidas map[string]
 
 	for i := 0; i < tamanioCadena-(constantes.TAMANIO_SECUENCIA_MUTANTE-1); i++ {
 		subCadena := cadena[i : i+constantes.TAMANIO_SECUENCIA_MUTANTE]
+
 		resultado, noExiste := secuenciasValidas[subCadena]
 		if noExiste {
 			fmt.Println("algo", resultado)
@@ -83,11 +84,13 @@ func EncontrarIncidenciasHash(secuenciasValidas, secuenciasinvalidas map[string]
 			i += constantes.TAMANIO_SECUENCIA_MUTANTE
 		} else {
 			_, noExiste = secuenciasinvalidas[subCadena[2:]]
-			if !noExiste {
+			if noExiste {
 				i += constantes.CANTIDAD_SECUENCIA_MUTANTE
 			}
 		}
+		fmt.Println("i",i)
 	}
+
 	return numeroIncidencias
 }
 
