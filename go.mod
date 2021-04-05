@@ -1,4 +1,4 @@
-module github.com/kmiloparra/resource-mutant
+module github.com/kmiloparra/resource-mutant/temp
 
 //replace misProyectos/resourceMutant/constantes => ./constantes
 //
