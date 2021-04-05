@@ -2,7 +2,7 @@ package utilidades
 
 import (
 	"fmt"
-	"misProyectos/resourceMutant/constantes"
+	"github.com/kmiloparra/resource-mutant/constantes"
 	"strings"
 )
 
