@@ -8,7 +8,7 @@ import (
 
 func Hola() string  {
 
-	return "hola desde github sin @v.5"
+	return "hola desde github sin @v.6"
 }
 
 // pivotea una matrix cuadrada
