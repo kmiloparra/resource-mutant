@@ -6,6 +6,11 @@ import (
 	"strings"
 )
 
+func Hola() string  {
+
+	return "hola desde github"
+}
+
 // pivotea una matrix cuadrada
 func PivotearMatrix(dna []string) []string {
 	var numeroFilas int = len(dna)

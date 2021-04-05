@@ -1,9 +1,6 @@
 package main
 
-func Hola() string  {
 
-	return "hola desde github"
-}
 
 
 //import (
