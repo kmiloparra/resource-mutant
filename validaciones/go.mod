@@ -1,4 +1,4 @@
-module "misProyectos/resourceMutant/validaciones"
+module github.com/kmiloparra/resource-mutant
 
 replace misProyectos/resourceMutant/constantes => ../constantes
 

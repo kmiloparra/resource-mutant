@@ -1,1 +1,1 @@
-module "misProyectos/resourceMutant/constantes"
+module github.com/kmiloparra/resource-mutant
