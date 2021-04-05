@@ -1,4 +1,4 @@
-module misProyectos/resourceMutant/utilidades
+module github.com/kmiloparra/resource-mutant
 
 go 1.16
 
