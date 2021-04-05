@@ -6,9 +6,9 @@ import (
 	"strings"
 )
 
-func Hola() string  {
+func Version() string  {
 
-	return "hola desde github sin v1.1.1"
+	return "v1.1.2"
 }
 
 // pivotea una matrix cuadrada
